@@ -1,16 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int b,c=0,d,i;
-    scanf("%d",&b);
-    int a[b];
-    for(i=0;i<b;i++)
+    int n,i,even=0;
+    scanf("%d",&n);
+    int arr[n];
+    for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
-        if(a[i]%2==0)
+        scanf("%d",&arr[i]);
+   
+    
+        if(arr[i]%2==0)
         {
-            c=c+a[i];
+            even=even+arr[i];
         }
     }
-    printf("%d",c);
+    printf("%d",even);
 }
